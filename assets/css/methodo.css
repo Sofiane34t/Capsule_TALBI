@@ -1,0 +1,144 @@
+/* Réinitialisation des marges et styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Titre principal */
+.analyse-header {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+}
+
+.analyse-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Conteneur principal */
+.analyse-container {
+    flex: 1;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenu principal */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+/* Sections Analyse et Représentativité */
+.methodo-section,
+.limites-section {
+    background-color: #f1f9ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 2px solid #007bff;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.methodo-section h2,
+.limites-section h2 {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.methodo-section p,
+.limites-section p,
+.methodo-section ul,
+.limites-section ul {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.methodo-section ul,
+.limites-section ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+/* Style des boutons de navigation */
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.navigation-buttons a {
+    font-size: 1rem;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-buttons a:hover {
+    background-color: #0056b3;
+}
+
+/* Style général pour le footer */
+.footer-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-left a, .footer-right a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-left a:hover, .footer-right a:hover {
+    text-decoration: underline;
+}
+
+.footer-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

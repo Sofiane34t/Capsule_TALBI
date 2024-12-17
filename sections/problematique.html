@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problématique - Présentation de la Recherche</title>
+    <link rel="stylesheet" href="/assets/css/problematique.css">
+</head>
+<body>
+    <!-- Titre principal -->
+    <header class="thematique-header">
+        <h1>Partie problématique : Énoncer la problématique</h1> 
+    </header>
+
+    <!-- Audio Section with Logo -->
+    <div class="audio-section">
+        <img src="/assets/media/audio.png" alt="Audio" id="audio-logo" onclick="toggleAudio()">
+        <audio id="audio" src="/assets/media/audios/audio2.mp3"></audio>
+    </div>
+
+<!-- Section 1 : Problématique centrale -->
+<div class="section">
+    <h2>Problématique centrale</h2>
+    <p>
+        <strong><center><span class="clignotant-hover">« Comment l'intégration de la dimension corporelle dans l’éducation peut-elle favoriser le développement psychique, émotionnel et social des adolescents ? »</span></center></strong>
+    </p>
+    <h3>Constats et interprétations</h3>
+    <ul>
+        <li><strong>Constat de départ :</strong> Les institutions éducatives actuelles privilégient les aspects cognitifs au détriment du développement corporel et émotionnel.</li>
+        <li><strong>Hypothèse principale :</strong> L’intégration de pratiques corporelles comme le yoga enrichit la réflexivité des adolescents en développant leur conscience de soi et leur régulation émotionnelle.</li>
+    </ul>
+</div>
+
+<!-- Section 2 : Stratégie de recueil des données -->
+<div class="section">
+    <h2>Stratégie de recueil des données</h2>
+    <ul>
+        <li><strong>Séances de yoga avec des adolescents.</strong></li>
+        <li><strong>Recueil de données via :</strong></li>
+        <ul>
+            <li>Observations en classe.</li>
+            <li>Entretiens avec les participants.</li>
+            <li>Réflexions collectives.</li>
+        </ul>
+    </ul>
+</div>
+
+<!-- Section 3 : Résultats clés -->
+<div class="section">
+    <h2>Résultats clés</h2>
+    <ul>
+        <li><strong>Impact positif du yoga :</strong></li>
+        <ul>
+            <li>Développement de la conscience corporelle.</li>
+            <li>Amélioration de la gestion du stress et des émotions.</li>
+            <li>Meilleure compréhension des relations sociales.</li>
+        </ul>
+        <li><strong>Limites relevées par l’autrice :</strong></li>
+        <ul>
+            <li>Difficulté d’intégrer ces pratiques dans des institutions scolaires rigides.</li>
+            <li>Manque d’études longitudinales pour valider ces résultats.</li>
+        </ul>
+    </ul>
+</div>
+
+<!-- Section 4 : Enseignements généraux -->
+<div class="section">
+    <h2>Enseignements généraux</h2>
+    <p>
+        La thèse montre que les pratiques corporelles peuvent devenir un outil éducatif majeur, mais elle souligne aussi la nécessité de réformer les approches institutionnelles pour intégrer pleinement le corps dans le développement des jeunes.
+    </p>
+</div>
+
+    <!-- Boutons de navigation -->
+    <div class="button-container">
+        <a href="/index.html" class="button">Accueil</a>
+        <a href="plan.html" class="button">Plan</a>
+        <a href="presentation.html" class="button">Présentation de la thèse</a>
+        <a href="analyse.html" class="button">Analyse critique de la thèse</a>
+        <a href="conclusion.html" class="button">Conclusion</a>
+        <a href="bibliographie.html" class="button">Bibliographie</a>
+    </div>
+
+    <script>
+        function toggleAudio() {
+            var audio = document.getElementById('audio');
+            if (audio.paused) {
+                audio.play(); // Démarre l'audio s'il est en pause
+            } else {
+                audio.pause(); // Met l'audio en pause s'il est en cours de lecture
+            }
+        }
+    </script>
+    
+</body>
+</html>

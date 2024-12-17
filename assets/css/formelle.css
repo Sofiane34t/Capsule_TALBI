@@ -1,0 +1,208 @@
+/* Réinitialisation des marges et styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assure que le body prend toute la hauteur de la page */
+}
+
+/* Titre principal */
+.bibliographie-header {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+}
+
+.bibliographie-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Conteneur principal */
+.grid-container {
+    padding: 40px;
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex: 1; /* Fait en sorte que ce conteneur occupe l'espace restant */
+    display: grid;
+    grid-template-columns:55% 50%;
+    gap: 20px;
+}
+
+/* Section de la bibliographie */
+.bibliographie-section {
+    margin-bottom: 30px;
+}
+
+.bibliographie-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.bibliographie-section h3 {
+    font-size: 1.5rem;
+    margin-top: 19px;
+}
+
+.bibliographie-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.bibliographie-section li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Section audio */
+.audio-section {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+#audio-logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Liens cliquables */
+.bibliographie-section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.bibliographie-section a:hover {
+    text-decoration: underline;
+}
+
+/* Styles de base pour le footer */
+.footer-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Section gauche: information email */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 14px;
+}
+
+.footer-left a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-left a:hover {
+    text-decoration: underline;
+}
+
+/* Centrer le texte "Mentions légales" sous l'email */
+.mentions-legales {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 14px;
+    padding-left: 80px;
+}
+
+/* Section centre: copyright */
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-center .copyright {
+    color: #333;
+}
+
+/* Section droite: icônes des réseaux sociaux */
+.footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+}
+
+/* Espacement entre les sections */
+.footer-bar > div {
+    width: 33%;
+}
+
+/* Style général pour le footer */
+footer {
+    width: 100%;
+    margin-top: auto;
+    background-color: #fff;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Boutons de navigation dans le footer */
+.footer-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.footer-btn:hover {
+    background-color: #0056b3;
+}
+
+.footer-btn:active {
+    background-color: #004085;
+}
+
+/* Ajout de la classe pour les liens de navigation */
+.footer-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.footer-btn:hover {
+    background-color: #0056b3;
+}

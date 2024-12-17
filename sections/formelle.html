@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partie Formelle - Présentation de la thèse</title>
+
+    <!-- Lien vers le CSS -->
+    <link rel="stylesheet" href="/assets/css/formelle.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="bibliographie-header">
+        <h1>Partie formelle :    Présentation de la thèse</h1>
+    </header>
+
+    <!-- Audio Section with Logo -->
+    <div class="audio-section">
+        <img src="/assets/media/audio.png" alt="Audio" id="audio-logo" onclick="toggleAudio()">
+        <audio id="audio" src="/assets/media/audios/audio1.mp3"></audio>
+    </div>
+
+    <!-- Grille avec 2 sections -->
+    <div class="grid-container">
+        <!-- Section 1 : Description des Parties et Chapitres -->
+        <div class="bibliographie-section" id="section1">
+            <h2>Description des Parties et Chapitres</h2>
+            <h3>Partie 1 : Le Développement Psychique et Sensoriel (Chapitres 1 à 3)</h3>
+            <ul>
+                <li>Chapitre 1 : L’infans et son environnement – analyse des sens et de leur rôle dans la structuration du psychisme.</li>
+                <li>Chapitre 2 : De l’enfant à l’adolescent – transformations psychiques, rôle de la période de latence.</li>
+                <li>Chapitre 3 : La bascule dans l’adolescence – remaniement des identifications et irruption de la génitalité.</li>
+            </ul>
+
+            <h3>Partie 2 : Le Corps Culturel : Société et Institution (Chapitres 4 et 5)</h3>
+            <ul>
+                <li>Chapitre 4 : Le corps cultivé – le rôle des émotions, de la pensée et de la quête identitaire.</li>
+                <li>Chapitre 5 : L’institution scolaire et la place du corps – analyse des pratiques éducatives qui censurent la sensorialité.</li>
+            </ul>
+
+            <h3>Partie 3 : Pédagogie de la réflexivité et pratique du yoga (chapitres 6 à8)</h3>
+            <ul>
+                <li>Chapitre 6 : Concevoir une pédagogie de la réflexivité – redéfinition de la relation éducative et de la posture de l’enseignant.</li>
+                <li>Chapitre 7 : Le yoga comme illustration – approfondissement des pratiques corporelles pour soutenir la réflexivité.</li>
+                <li>Chapitre 8 : Limites, ouvertures et conclusion – discussion des écueils méthodologiques et des perspectives.</li>
+            </ul>
+        </div>
+
+        <!-- Section 2 : Décompte Statistique -->
+        <div class="bibliographie-section" id="section2">
+            <h2>Décompte Statistique</h2>
+            <ul>
+                <li><strong>Longueur totale :</strong> La thèse compte 344 pages de l’introduction à la conclusion (hors annexes et bibliographie).</li>
+                <li><strong>Répartition des parties :</strong>
+                    <ul>
+                        <li>Parties théoriques (1 et 2) : 218 pages (63%)</li>
+                        <li>Partie pratique (3) : 102 pages (30%)</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>Bibliographie</h2>
+            <p>La bibliographie occupe 16 pages et compte 188 références.</p>
+            <ul>
+                <li>Psychanalyse et Psychologie – 40% des références</li>
+                <li>Éducation et Pédagogie – 30% des références</li>
+                <li>Yoga et Médiations corporelles – 15% des références</li>
+                <li>Philosophie – 10% des références</li>
+                <li>Sciences Sociales (autres) – 5% des références</li>
+            </ul>
+
+            <h2>Annexes</h2>
+            <ul>
+                <li>Annexe 1 : Extraits d’ouvrages théoriques sur le yoga (ex. Yoga-sutras de Pantajali).</li>
+                <li>Annexe 2 : Protocoles des séances de yoga appliquées en milieu scolaire.</li>
+                <li>Annexe 3 : Notes d’observation et réflexions des participants.</li>
+                <li>Annexe 4 : Référentiels éducatifs liés aux compétences psycho-sociales.</li>
+                <li>Annexe 5 : Documents administratifs relatifs aux formations suivies.</li>
+            </ul>
+        </div>
+    </div> <!-- Fin .grid-container -->
+
+    <!-- Footer Buttons -->
+    <div class="footer-buttons">
+        <a href="../index.html" class="footer-btn">Accueil</a>
+        <a href="plan.html" class="footer-btn">Plan</a>
+        <a href="presentation.html" class="footer-btn">Présentation de la thèse</a>
+        <a href="thematique.html" class="footer-btn">Suivant : Partie Thématique</a>
+        <a href="conclusion.html" class="footer-btn">Conclusion</a>
+        <a href="bibliographie.html" class="footer-btn">Bibliographie</a>
+    </div>
+
+    
+
+    <script>
+        function toggleAudio() {
+            var audio = document.getElementById('audio');
+            if (audio.paused) {
+                audio.play(); // Démarre l'audio s'il est en pause
+            } else {
+                audio.pause(); // Met l'audio en pause s'il est en cours de lecture
+            }
+        }
+    </script>
+
+</body>
+</html>

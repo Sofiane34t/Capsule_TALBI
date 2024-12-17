@@ -1,0 +1,114 @@
+/* Réinitialisation des marges et styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Titre principal */
+.analyse-header {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+}
+
+.analyse-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Conteneur principal */
+.analyse-container {
+    flex: 1;
+    padding: 40px;
+    max-width: 1400px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Section globale */
+.section {
+    background-color: #f1f9ff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 1.7rem;
+    color: #007bff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.section h3 {
+    font-size: 1.2rem;
+    color: #0056b3;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.section p, .section li {
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.section ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.section ul li {
+    margin-bottom: 7px;
+}
+
+/* Boutons de navigation */
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.navigation-buttons a {
+    font-size: 1rem;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-buttons a:hover {
+    background-color: #0056b3;
+}
+
+ 

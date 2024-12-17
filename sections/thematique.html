@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partie Thématique - Présentation de la Recherche</title>
+    <link rel="stylesheet" href="/assets/css/thematique.css">
+</head>
+<body>
+    <!-- Titre principal -->
+    <header class="thematique-header">
+        <h1>Présentation Thématique</h1>
+    </header>
+
+    <!-- Audio Section with Logo -->
+    <div class="audio-section">
+        <img src="/assets/media/audio.png" alt="Audio" id="audio-logo" onclick="toggleAudio()">
+        <audio id="audio" src="/assets/media/audios/audio3.mp3"></audio>
+    </div>
+
+    <!-- Disposition circulaire -->
+    <div class="circle-layout">
+        <!-- Nuage au centre -->
+        <div class="nuage-container">
+            <img src="/assets/media/nuage.png" alt="Nuage de mots" class="nuage">
+        </div>
+
+        <!-- Sections en cercle -->
+        <div class="section-card section-top">
+            <h2>Présentation de l’autrice</h2>
+            <ul>
+                <li><strong>Nom :</strong> Charlotte Cavet.</li>
+                <li><strong>Formation :</strong> Interdisciplinaire, combinant la psychanalyse, les sciences de l’éducation et la pratique du yoga.</li>
+                <li><strong>Expérience professionnelle :</strong> Conseillère principale d’éducation (CPE) et instructrice de yoga.</li>
+            </ul>
+        </div>
+
+        <div class="section-card section-right">
+            <h2>Démarche scientifique</h2>
+            <ul>
+                <li>Cavet ancre sa recherche dans une approche psychanalytique et éducative, mobilisant des concepts clés comme le Moi-peau et le transfert.</li>
+                <li><strong>Cadre théorique :</strong> L’autrice part du champ psychanalytique pour explorer des médiations corporelles (yoga) dans un cadre éducatif.</li>
+            </ul>
+        </div>
+
+        <div class="section-card section-left">
+            <h2>Éléments de problématisation</h2>
+            <ul>
+                <li><strong>Hypothèses :</strong> Le corps, souvent négligé en éducation, peut devenir un levier pour développer la réflexivité des adolescents.</li>
+                <li><strong>Notions mobilisées :</strong> Corps, psyché, réflexivité, régulation émotionnelle, pédagogie.</li>
+            </ul>
+        </div>
+
+        <div class="section-card section-bottom-left">
+            <h2>Champs et postures</h2>
+            <ul>
+                <li>S’inscrit dans le champ de la psychanalyse appliquée à l’éducation, en adoptant une posture interdisciplinaire.</li>
+            </ul>
+        </div>
+
+        <div class="section-card section-bottom-right">
+            <h2>Étapes de la recherche</h2>
+            <ol>
+                <li>Étude théorique des concepts psychanalytiques.</li>
+                <li>Élaboration et mise en œuvre de séances expérimentales de yoga.</li>
+                <li>Analyse des données qualitatives recueillies auprès des participants.</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Boutons de navigation -->
+    <div class="button-container">
+        <a href="/index.html"><button class="button">Accueil</button></a>
+        <a href="/sections/plan.html"><button class="button">Plan</button></a>
+        <a href="/sections/presentation.html"><button class="button">Présentation de la thèse</button></a>
+        <a href="/sections/problematique.html"><button class="button">Page suivante</button></a>
+        <a href="/sections/conclusion.html"><button class="button">Conclusion</button></a>
+        <a href="/sections/bibliographie.html"><button class="button">Bibliographie</button></a>
+    </div>
+
+    <!-- JavaScript pour jouer l'audio -->
+    <script>
+        function toggleAudio() {
+            var audio = document.getElementById('audio');
+            if (audio.paused) {
+                audio.play(); // Démarre l'audio s'il est en pause
+            } else {
+                audio.pause(); // Met l'audio en pause s'il est en cours de lecture
+            }
+        }
+    </script>
+</body>
+</html>

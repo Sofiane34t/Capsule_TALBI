@@ -1,0 +1,149 @@
+/* Réinitialisation globale */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Titre principal */
+.thematique-header {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+}
+
+.thematique-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Section audio */
+.audio-section {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+#audio-logo {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Disposition circulaire */
+.circle-layout {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: 50px auto;
+}
+
+/* Nuage au centre */
+.nuage-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nuage {
+    width: 500px;
+    height: 300px;
+    margin-top: 200px;
+}
+
+/* Sections en cercle */
+.section-card {
+    position: absolute; /* Indépendant des autres sections */
+    background: white;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: justify;
+}
+
+/* Position et dimensions de chaque section */
+.section-top {
+    width: 650px;          /* Largeur de la section */
+    height: 170px;         /* Hauteur de la section */
+    top: -20px;             /* Position à 10px du haut */
+    left: 50%;             /* Centré horizontalement */
+    transform: translateX(-50%); /* Ajuste le centrage */
+}
+
+.section-right {
+    width: 450px;          /* Largeur de la section */
+    height: 180px;         /* Hauteur de la section */
+    top: 50%;              /* Centré verticalement à 50% */
+    right: 600px;           /* Position à 10px du bord droit */
+    transform: translateY(-50%); /* Ajuste le centrage vertical */
+}
+
+.section-left {
+    width: 450px;          /* Largeur de la section */
+    height: 180px;         /* Hauteur de la section */
+    top: 50%;              /* Centré verticalement à 50% */
+    left: 600px;            /* Position à 10px du bord gauche */
+    transform: translateY(-50%); /* Ajuste le centrage vertical */
+}
+
+.section-bottom-left {
+    width: 450px;          /* Largeur de la section */
+    height: 180px;         /* Hauteur de la section */
+    bottom: 20px;          /* Position à 20px du bas */
+    left: 600px;             /* Position à 20% du côté gauche */
+    top: 70%;
+}
+
+.section-bottom-right {
+    width: 450px;          /* Largeur de la section */
+    height: 180px;         /* Hauteur de la section */
+    bottom: 20px;          /* Position à 20px du bas */
+    right: 600px;            /* Position à 20% du côté droit */
+    top: 70%;
+}
+
+
+
+
+/* Style des boutons dans la div .button-container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Style des boutons */
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Changement de couleur au survol */
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Style pour les liens dans .button-container */
+.button-container a {
+    text-decoration: none;
+}
+
+/* Changement d'apparence au survol des liens */
+.button-container a:hover .button {
+    background-color: #0056b3;
+}
+
+ 

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interactif</title>
+    <link rel="stylesheet" href="/assets/css/quizz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz Interactif</h1>
+        <div id="quiz-content">
+            <p id="question-text">Question en cours...</p>
+            <div id="answers-container"></div>
+        </div>
+        <div class="quiz-buttons">
+            <button id="next-btn">Question Suivante</button>
+            <button id="restart-btn" style="display:none;">Recommencer</button>
+            <button id="home-btn" style="display:none;" onclick="window.location.href='../index.html'">Accueil</button>
+        </div>
+        <p id="score-text"></p>
+    </div>
+    <script src="/assets/js/quizz.js"></script>
+</body>
+</html>
